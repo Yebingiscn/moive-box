@@ -1,0 +1,58 @@
+.main{
+  height: 100vh;
+  display: flex;
+}
+
+.scroll-nav{
+  width: 20%;
+  margin-top: 15px;
+}
+
+.scroll-nav view{
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.scroll-nav view.active{
+  background: #96ce54;
+  border-radius: 15rpx;
+}
+
+.scroll-content{
+  flex: 1;
+}
+
+.content-item{
+  height: 600rpx;
+}
+
+.list-view {
+  margin: 15px 0;
+  padding: 15px;
+  background: rgb(255, 254, 249);
+  border-radius: 15px;
+}
+
+.list-img {
+  height: 400rpx;
+  width: 500rpx;
+  border-radius: 10px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px 2px #000;
+}
+
+.list-title {
+  margin-top: 5px;
+	position: relative;
+  float: left;
+}
+
+.list-rate {
+  margin-top: 5px;
+	position: relative;
+  float: right;
+}

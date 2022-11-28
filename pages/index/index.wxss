@@ -1,0 +1,108 @@
+view {
+  background: rgb(255, 254, 249);
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+
+.poster {
+  margin: 15px 0;
+  background: rgb(226, 225, 228);
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.poster {
+  height: 300px;
+  width: 100%;
+}
+
+.swiper-item {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.poster-img {
+  width: 85%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.poster-title {
+  position: relative;
+  float: left;
+  padding: 0 30px;
+}
+
+.poster-rate {
+  position: relative;
+  float: right;
+  padding: 0 30px;
+}
+
+
+.everyDaySentence {
+  margin: 15px 15px;
+  padding: 10px;
+}
+
+.refresh-sentence {
+  position: relative;
+  float: right;
+  background: #96ce54;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.movie-search {
+  margin: 15px 15px;
+  padding: 10px;
+}
+
+.selectHot {
+  background: #96ce54;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.search-input {
+  height: 30px;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: rgb(226, 225, 228);
+}
+
+.search-button {
+  position: relative;
+  float: right;
+  background: #96ce54;
+  border-radius: 10px;
+  margin-top: 35px;
+}
+
+.douban-hot {
+  margin: 15px 15px;
+  padding: 10px;
+}

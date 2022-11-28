@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/mine/setting",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#96ce54",  
+    "navigationBarTitleText": "叶绿素的电影小筑",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/首页.png",
+      "selectedIconPath": "images/首页@active.png"
+    },{
+      "pagePath": "pages/list/list",
+      "text": "电影列表",
+      "iconPath": "images/发现.png",
+      "selectedIconPath": "images/发现@active.png"
+     
+    },{
+      "pagePath": "pages/mine/setting",
+      "text": "设置",
+      "iconPath": "images/设置.png",
+      "selectedIconPath": "images/设置@active.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

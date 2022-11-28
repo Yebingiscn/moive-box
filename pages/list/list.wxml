@@ -1,0 +1,22 @@
+<view class="main">
+  <view class="scroll-nav">
+    <block wx:for="{{selectList}}" wx:key="index">
+      <view class="{{activeIndex == index ? 'active':''}}" bindtap="titleChange" data-index="{{index}}">
+        {{item}}
+      </view>
+    </block>
+  </view>
+  <view class="scroll-content">
+    <scroll-view scroll-y="true" style="height:100%" 
+    scroll-with-animation="ture" bindscrolltolower="onReachBottom">
+      <block wx:for="{{toView}}" wx:key="item.id">
+        <view class="list-view" bindtap="toDetail" data-url="{{item.url}}">
+          <image src="{{item.cover}}" class="list-img"></image>
+          <p class="list-title">{{item.title}}</p>
+          <p class="list-rate">评分：{{item.rate}}</p>
+          <text>\n</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

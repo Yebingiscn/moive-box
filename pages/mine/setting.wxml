@@ -1,0 +1,46 @@
+<view class="head">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button>
+  <input type="nickname" class="nick-name" placeholder="选择姓名" />
+</view>
+
+<view class="version">
+  <h1>关于 - 电影小筑</h1>
+  <text>\n</text>
+  <p>版本号：{{version==''?'未上线':version}}</p>
+</view>
+
+<view class="desc-content">
+  <h1>简介</h1>
+  <text>\n</text>
+  <p>电影小筑是一款微信小程序，致力于帮助我们关注到最新的电影和其他影视剧信息
+  </p>
+</view>
+<view>
+  <h1>数据来源</h1>
+  <text>\n</text>
+  <p>韩小韩API接口站：https://api.vvhan.com/ </p>
+  <text>\n</text>
+  <p>豆瓣接口：https://movie.douban.com</p>
+</view>
+
+<view class="desc-title">
+  <h1>关于开发者</h1>
+  <text>\n</text>
+  <p>
+    开发者：叶绿素b
+    <text>\n</text>
+    欢迎关注开发者其他账号!
+    <text>\n</text>
+    公众号：小生态球中的叶绿素b
+    <text>\n</text>
+    GitHub：https://github.com/Yebingiscn
+    <text>\n</text>
+    个人博客：https://yebingiscn.github.io/
+  </p>
+</view>
+<view class="button-area">
+  <button class="contact-us" style="width: 120px;" bindtap="contactUs">联系我们</button>
+  <button open-type="share" class="share-us" style="width: 120px;">分享</button>
+</view>
