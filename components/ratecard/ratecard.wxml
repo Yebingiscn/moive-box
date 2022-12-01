@@ -1,0 +1,11 @@
+<!--components/ratecard/ratecard.wxml-->
+<view class="item-rate" wx:if="{{score != 0}}">
+  <image class="rate-star" style="height:{{starsize}}rpx;width:{{starsize}}rpx;" src="/images/star_light.png" wx:for="{{light}}" wx:key="item.id"></image>
+  <image class="rate-star" style="height:{{starsize}}rpx;width:{{starsize}}rpx;" src="/images/star_half.png" wx:for="{{half}}" wx:key="item.id"></image>
+  <image class="rate-star" style="height:{{starsize}}rpx;width:{{starsize}}rpx;" src="/images/star_dark.png" wx:for="{{dark}}" wx:key="item.id"></image>
+  <text class="rate-score" style="font-size:{{scoresize}}rpx;color:{{scorecolor}};">{{score}}</text>
+</view>
+<view wx:else>
+  <image class="rate-star" style="height:{{starsize}}rpx;width:{{starsize}}rpx;" src="/images/star_dark.png" wx:for="{{[1,2,3,4,5]}}" wx:key="*this"></image>
+  <text class="rate-score" style="font-size:{{scoresize}}rpx;color:{{scorecolor}};">未评</text>
+</view>

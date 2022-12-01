@@ -1,44 +1,44 @@
 <!--pages/index/index.wxml-->
 <view class="poster">
-  <h1 class="title">热门电影</h1>
-  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="swiper-item">
-    <block wx:for="{{moviePoster}}" wx:key="item.id">
-      <swiper-item>
-        <image src="{{item.cover}}" class="poster-img"></image>
-        <p class="poster-title">{{item.title}}</p>
-        <p class="poster-rate">评分：{{item.rate}}</p>
-      </swiper-item>
-    </block>
-  </swiper>
+	<h1 class="title">热门电影</h1>
+	<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" class="swiper-item">
+		<block wx:for="{{moviePoster}}" wx:key="item.id">
+			<swiper-item>
+				<image src="{{item.cover}}" class="poster-img"></image>
+				<p class="poster-title">{{item.title}}</p>
+				<ratecard class="poster-rate" score="{{item.rate}}"></ratecard>
+			</swiper-item>
+		</block>
+	</swiper>
 </view>
 <view class="everyDaySentence">
-  <h1>每日一句</h1>
-  <button size="mini" class="refresh-sentence" bindtap="getNewSentence">换一句</button>
-  <!-- <text>\n</text> -->
-  <block wx:for="{{sentence}}" wx:key="item.id">
-    <p>{{item.en}}</p>
-    <text>\n</text>
-    <p>{{item.zh}}</p>
-  </block>
+	<h1>每日一句</h1>
+	<button size="mini" class="refresh-sentence" bindtap="getNewSentence">换一句</button>
+	<!-- <text>\n</text> -->
+	<block wx:for="{{sentence}}" wx:key="item.id">
+		<p>{{item.en}}</p>
+		<text>\n</text>
+		<p>{{item.zh}}</p>
+	</block>
 </view>
 <view class="movie-search">
-  <h1>搜索</h1>
-  <form bindsubmit="toDetail">
-    <button size="mini" class="search-button" form-type="submit">
-      搜索</button>
-    <input type="text" name="searchContent" placeholder="  请输入类别" class="search-input" />
-  </form>
-  <p>搜索热点：</p>
-  <block wx:for="{{searchHotSelect}}" wx:key="item.id">
-    <button class="selectHot" size="mini" bindtap="rediectToList">{{item}}</button>
-  </block>
+	<h1>搜索</h1>
+	<form bindsubmit="toDetail">
+		<button size="mini" class="search-button" form-type="submit">
+			搜索</button>
+		<input type="text" name="searchContent" placeholder="  请输入类别" class="search-input" />
+	</form>
+	<p>搜索热点：</p>
+	<block wx:for="{{searchHotSelect}}" wx:key="item.id">
+		<button class="selectHot" size="mini" bindtap="rediectToList">{{item}}</button>
+	</block>
 </view>
 <view class="douban-hot">
-  <h1>豆瓣小组热点</h1>
-  <text>\n</text>
-  <block wx:for="{{doubanHot}}" wx:key="item.id">
-    <p style="color: red;">{{item.index}}</p><text>. </text>
-    <p bindtap="toDetail({{item.url}})">{{item.title}}</p>
-    <text>\n</text>
-  </block>
+	<h1>豆瓣小组热点</h1>
+	<text>\n</text>
+	<block wx:for="{{doubanHot}}" wx:key="item.id">
+		<p style="color: red;">{{item.index}}</p><text>. </text>
+		<p bindtap="toDetail({{item.url}})">{{item.title}}</p>
+		<text>\n</text>
+	</block>
 </view>

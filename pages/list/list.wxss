@@ -28,7 +28,7 @@
 
 .list-view {
   margin: 15px 0;
-  padding: 15px;
+  padding: 30px;
   background: rgb(255, 254, 249);
   border-radius: 15px;
 }

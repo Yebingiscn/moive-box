@@ -9,6 +9,10 @@ view {
   background: rgb(226, 225, 228);
 }
 
+.poster view {
+	background: rgb(226, 225, 228);
+}
+
 .title {
   font-size: 20px;
   text-align: center;
@@ -52,7 +56,8 @@ p {
 .poster-rate {
   position: relative;
   float: right;
-  padding: 0 30px;
+	padding: 0 30px;
+  background: rgb(226, 225, 228);
 }
 
 

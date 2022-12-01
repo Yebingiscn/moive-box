@@ -1,0 +1,15 @@
+/* components/ratecard/ratecard.wxss */
+/* ratecard */
+.item-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate-star {
+  margin: 0 5rpx;
+}
+
+.rate-score {
+  margin: 0 15rpx;
+}

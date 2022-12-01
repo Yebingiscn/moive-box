@@ -13,7 +13,7 @@
         <view class="list-view" bindtap="toDetail" data-url="{{item.url}}">
           <image src="{{item.cover}}" class="list-img"></image>
           <p class="list-title">{{item.title}}</p>
-          <p class="list-rate">评分：{{item.rate}}</p>
+          <ratecard class="list-rate" score="{{item.rate}}"></ratecard>
           <text>\n</text>
         </view>
       </block>
